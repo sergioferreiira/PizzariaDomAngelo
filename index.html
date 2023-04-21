@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/logo.png">
+  <title>PIZZARIA DOM ANGELO</title>
+  <link rel="stylesheet" href="pizzaria.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Italianno&family=Open+Sans:wght@300&family=Qahiri&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Italianno&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="../img/logo.png" class="logoEdits">
+    <div class="toggle"></div>
+  </header>
+  <section class="showcase">
+
+    <div class="itensAbout">
+      <div class="text">
+        <h1 class="titleDaLoja">Dom angelo</h1>
+        <p>Sua fome merece </p>
+      </div>
+      <ul class="text">
+
+        <li class="links"> <a href="cardapiotradicional.html">Cardapio Tradicional</a></li>
+        <li class="links"> <a href="cardapiopremmy.html">Cardapio Premium</a></li>
+        <li class="links"> <a href="cardapiopalmito.html">Palmito recheado</a></li>
+        <li class="links"> <a
+            href="https://api.whatsapp.com/send?phone=5515996217082&text=Ol%C3%A1%20gostaria%20de%20uma%20reserva%20no%20rodizio"
+            target="_blank"> Reserva para o rodizio?</a></li>
+        <li class=" musica">
+          <audio src="../music/pizza dom angelo jingle.mp3" loop controls></audio>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <video src="../videos/background.mp4" autoplay loop autobuffer muted playsinline></video>
+
+
+
+  </section>
+
+
+  <div class="menu">
+    <ul>
+      <li><a href="https://www.instagram.com/domangelopizzabar/" target="_blank"><img
+            src="../img/instagramicon.png"></a></li>
+      <li><a href="https://web.facebook.com/domangelopizzabar/?_rdc=1&_rdr" target="_blank"><img
+            src="../img/faceicon.png"></a></li>
+      <br>
+      <li><a href="about.html"> <img src="../img/aboutus.png" alt=""> Sobre nós</a></li>
+      <br>
+      <li><a href="location.html"> <img src="../img/iconlocation.png" alt=""> Localização</a></li>
+      <br>
+      <li><a href="https://domangelopizzabar.menudino.com/" target="_blank"><img src="../img/bagiconmini.png"> Promoções
+        </a></li>
+      <br>
+      <!--<li><a href="galery.html"> <img src="../img/iconpicture.png" alt=""> Galeria</a></li>-->
+
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      showcase.classList.toggle('active');
+    })
+  </script>
+</body>
+
+</html>

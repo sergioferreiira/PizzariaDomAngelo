@@ -1,0 +1,55 @@
+.page2{
+  position: absolute;
+  z-index: -999;
+}
+header .logo{
+  text-align: center;
+  z-index: 1;
+  height: 200px;
+  background-color: #b19578;
+}
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+.bg-light{
+  background: linear-gradient(black,black,black);
+
+}
+.container h2 {
+  text-align: center;
+  font-family: 'Ephesis', cursive;
+  color: #edcd9e;
+  font-size: 50px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.container h1{
+  font-family: 'Ephesis', cursive;
+  font-size: 55px;
+  font-weight: 500;
+  color: #edcd9e;
+}
+
+.container p{
+  font-size: 20px;
+  font-weight: 1000;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Scheherazade New', serif;
+  color: #e73232;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+footer {
+  text-align: center;
+}
+.card{
+  background: transparent;
+  border: 0;
+}
+.card-img-top{
+  border-radius: 100%;
+}
