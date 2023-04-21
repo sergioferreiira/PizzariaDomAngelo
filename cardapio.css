@@ -7,7 +7,9 @@
 }
 
 body {
-    background-color: #eaddca;
+    background-image: url(img/tecido-tricoline-mista-pizza-fundo-preto-tricolinemista.jpg);
+    background-size:contain;
+    
 }
 
 .premiumCardapio {
@@ -26,6 +28,8 @@ body {
     margin: 10%;
     border-radius: 10px;
     box-shadow: black 5px 5px 10px 5px;
+    background-image: url(img/doodle-da-pizza-ajustado-em-um-bege-22990723.jpg);
+    background-size: cover;
 }
 
 .tipo {
