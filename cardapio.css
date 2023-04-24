@@ -6,8 +6,13 @@
     padding: 0;
 }
 
-body {
-    background-image: url(img/tecido-tricoline-mista-pizza-fundo-preto-tricolinemista.jpg);
+.bodyCardapioTradicional {
+    background-image: url(img/backgroundCardapioTradicional.png);
+    background-size:contain;
+    
+}
+.bodyCardapioPremmy {
+    background-image: url(img/backgroundCardapioPremium.png);
     background-size:contain;
     
 }
@@ -20,15 +25,13 @@ body {
     text-align: center;
 }
 
-.boxes {}
-
 .boxe {
     padding: 0.5em;
     background: #eaddca;
     margin: 10%;
     border-radius: 10px;
     box-shadow: black 5px 5px 10px 5px;
-    background-image: url(img/doodle-da-pizza-ajustado-em-um-bege-22990723.jpg);
+    background-image: url(img/backgroundLista.jpg);
     background-size: cover;
 }
 
@@ -40,7 +43,8 @@ body {
     font-size: 20px;
 
 }
-.priceItens {
+.priceItens,
+.priceItensBorda {
     text-align: center;
     color: #651713;
     font-family: 'Frijole', cursive;
@@ -66,12 +70,6 @@ body {
 }
 
 
-
-
-
-
-
-
 .cardapioImage {
     text-align: center;
     padding: 1em;
@@ -89,19 +87,72 @@ body {
     height: 100%;
 }
 
+.boxeContato{
+    display: flex;
+    justify-content: space-around;
+}
 
+.iconeDoWhats {
+    width: 20px;
+    height: 20px;
+}
 
+.linkParaPedido {
+    text-decoration: none;
+    color: black;
+    font-family: 'Frijole', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+}
 
+.voltarParaMenu {
+    text-align: center;
+}
 
+.linkMenu {
+    text-decoration: none;
+    font-weight: 700;
+    color: #651713;
+    font-family: 'Frijole', cursive;
+}
 
 @media screen and (min-width: 1000px) {
-    .cardapioImage {
+    .boxes {
         display: grid;
-        grid-template-columns: 25%;
+        grid-template-columns: 32% 32% 32%;
+        gap: 0.1em;
     }
 
-    .cardapioImages {
+    .boxe {
+        text-align: center;
+    }
+
+    .tipo ,
+    .priceItens,
+    .sabor,
+    .descricaoItens {
         padding: 1em;
     }
 
+
+
+    .boxeContato{
+        display: grid;
+    }
+    
+    .iconeDoWhats {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .linkParaPedido {
+        text-decoration: none;
+        color: black;
+        font-family: 'Frijole', cursive;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    
 }
